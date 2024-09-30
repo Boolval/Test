@@ -1,0 +1,30 @@
+{
+    "name": "boolval/test",
+    "description": "The Boolval Test",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zulkarneyn Yavas",
+            "email": "zulkarneynyavas@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./vendor/boolval/route",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "boolval/route": "@dev"
+    },
+    "minimum-stability": "stable"
+}
