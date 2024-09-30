@@ -1,7 +1,6 @@
 {
     "name": "boolval/test",
     "description": "The Boolval Test",
-    "type": "project",
     "license": "MIT",
     "authors": [
         {
@@ -9,22 +8,14 @@
             "email": "zulkarneynyavas@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./vendor/boolval/route",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         }
     },
+    "minimum-stability": "stable",
+    "type": "project",
     "require": {
-        "boolval/route": "@dev"
-    },
-    "minimum-stability": "stable"
+        "boolval/route": "^1.0"
+    }
 }
