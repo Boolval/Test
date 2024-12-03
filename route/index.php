@@ -3,9 +3,9 @@
 use Boolval\Routing\Route;
 
 
-Route::method('GET')->uri('')->include('/view/index');
+Route::method('GET')->uri('')->view('index');
 
-Route::method('GET')->uri(':number')->include('/view/index');
+Route::method('GET')->uri(':number')->view('index');
 
 Route::method('GET')->uri(':number')->call([new App\Test, 'index']);
 
