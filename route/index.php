@@ -1,6 +1,6 @@
 <?php
 
-use Boolval\Route;
+use Boolval\Routing\Route;
 
 
 Route::method('GET')->uri('')->include('/view/index');
